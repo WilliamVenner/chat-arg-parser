@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/chat-arg-parser.svg)](https://badge.fury.io/js/chat-arg-parser)
+[![StyleCI](https://github.styleci.io/repos/148063326/shield?branch=master)](https://github.styleci.io/repos/148063326)
+
 ## cmd-arg-parser
 
 Parses commands with a specified prefix, delimited by spaces, with support for double & single quotations, and no need for escaping.
