@@ -1,0 +1,35 @@
+{
+	"name": "cmd-arg-parser",
+	"version": "1.0.0",
+	"description": "Parses commands with a specified prefix, delimited by spaces, with quotation + escaping support",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/WilliamVenner/cmd-arg-parser.git"
+	},
+	"keywords": [
+		"commands",
+		"command",
+		"cmd",
+		"arg",
+		"argument",
+		"parse",
+		"parser",
+		"prefix",
+		"quotation",
+		"quotations",
+		"escaping",
+		"escape",
+		"chat",
+		"discord",
+		"bot",
+		"game",
+		"gaming"
+	],
+	"author": "William Venner",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/WilliamVenner/cmd-arg-parser/issues"
+	},
+	"homepage": "https://github.com/WilliamVenner/cmd-arg-parser#readme"
+}
