@@ -1,6 +1,6 @@
 ## cmd-arg-parser
 
-This module parses commands with a specified prefix, delimited by spaces, with quotation + escaping support.
+Parses commands with a specified prefix, delimited by spaces, with support for double & single quotations, and no need for escaping.
 
 ## Installation
 
@@ -26,7 +26,11 @@ var command_input = '!jail "name with spaces" 10s';
 parseCommandInput('!', command_input);
 // ['jail', ['name with spaces', '10s']]
 
-var command_input = '!jail "name with \"quotation" 10s';
+var command_input = "!jail 'name with spaces' 10s";
+parseCommandInput('!', command_input);
+// ['jail', ['name with spaces', '10s']]
+
+var command_input = '!jail "name with "quotation" 10s';
 parseCommandInput('!', command_input);
 // ['jail', ['name with "quotation', '10s']]
 

@@ -1,11 +1,11 @@
 {
-	"name": "cmd-arg-parser",
-	"version": "1.0.0",
-	"description": "Parses commands with a specified prefix, delimited by spaces, with quotation + escaping support",
+	"name": "chat-arg-parser",
+	"version": "2.0.0",
+	"description": "Parses commands with a specified prefix, delimited by spaces, with support for double & single quotations, and no need for escaping.",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/WilliamVenner/cmd-arg-parser.git"
+		"url": "git+https://github.com/WilliamVenner/chat-arg-parser.git"
 	},
 	"keywords": [
 		"commands",
@@ -18,6 +18,9 @@
 		"prefix",
 		"quotation",
 		"quotations",
+		"quote",
+		"single",
+		"double",
 		"escaping",
 		"escape",
 		"chat",
@@ -29,7 +32,7 @@
 	"author": "William Venner",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/WilliamVenner/cmd-arg-parser/issues"
+		"url": "https://github.com/WilliamVenner/chat-arg-parser/issues"
 	},
-	"homepage": "https://github.com/WilliamVenner/cmd-arg-parser#readme"
+	"homepage": "https://github.com/WilliamVenner/chat-arg-parser#readme"
 }
