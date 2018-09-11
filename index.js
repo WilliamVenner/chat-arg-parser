@@ -2,7 +2,7 @@ const arg_parser_regex = /(?:"(.+?)" |'(.+?)' |(.+?) )/;
 
 module.exports = function(cmd_prefix, input) {
 	// check whether the input is a command
-	if (input[0] === cmd_prefix) {
+	if (input[cmd_prefix.length] === cmd_prefix) {
 		// parse every space
 		let unparsed_args = input.split(" ");
 		// extract our command
