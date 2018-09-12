@@ -1,6 +1,6 @@
 {
 	"name": "chat-arg-parser",
-	"version": "2.0.4",
+	"version": "2.1.0",
 	"description": "Parses commands with a specified prefix, delimited by spaces, with support for double & single quotations, and no need for escaping.",
 	"main": "index.js",
 	"repository": {
