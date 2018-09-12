@@ -5,6 +5,15 @@
 
 Parses commands with a specified prefix, delimited by spaces, with support for double & single quotations, and no need for escaping.
 
+The function returns an object containing the command and its arguments:
+
+```javascript
+{
+    cmd: 'jail',
+    args: ['person', '10d'],
+}
+```
+
 ## Installation
 
 Using npm:
@@ -23,21 +32,21 @@ const parseCommandInput = require('chat-arg-parser');
 
 var command_input = '!jail';
 parseCommandInput('!', command_input);
-// ['jail', []]
+// => {cmd: 'jail', args: []}
 
 var command_input = '!jail "name with spaces" 10s';
 parseCommandInput('!', command_input);
-// ['jail', ['name with spaces', '10s']]
+// => {cmd: 'jail', args: ['name with spaces', '10s']}
 
 var command_input = "!jail 'name with spaces' 10s";
 parseCommandInput('!', command_input);
-// ['jail', ['name with spaces', '10s']]
+// => {cmd: 'jail', args: ['name with spaces', '10s']}
 
 var command_input = '!jail "name with "quotation" 10s';
 parseCommandInput('!', command_input);
-// ['jail', ['name with "quotation', '10s']]
+// => {cmd: 'jail', args: ['name with "quotation', '10s']}
 
 var command_input = 'not a command';
 parseCommandInput('!', command_input);
-// false
+// => false
 ```
